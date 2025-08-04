@@ -28,6 +28,9 @@ public abstract class AbstractServlet extends HttpServlet {
      * @param htmlTitle Title of HTML page.
      * @param htmlBody Body of HTML page.
      */
+
+    /* ～CxOneテスト用～
+
     protected void responseToClient(HttpServletRequest req, HttpServletResponse res, String htmlTitle, String htmlBody) {
         PrintWriter writer = null;
         HttpSession session = req.getSession();
@@ -102,11 +105,8 @@ public abstract class AbstractServlet extends HttpServlet {
         }
     }
 
-    /**
-     * Return a message for a given property key.
-     *
-     * @return A message for a given property key
-     */
+    ～CxOneテスト用～　*/
+
     protected String getMsg(String propertyKey, Locale locale) {
         return getMsg(propertyKey, null, locale);
     }

@@ -28,7 +28,15 @@ public class OGNLExpressionInjectionServlet extends AbstractServlet {
         Object value = null;
         String errMessage = "";
         OgnlContext ctx = new OgnlContext();
+        
+        /*
+        ～CxOneテスト用～
+
         String expression = req.getParameter("expression");
+
+        ～CxOneテスト用～
+        */
+        
         if (!StringUtils.isBlank(expression)) {
             try {
                 Object expr = Ognl.parseExpression(expression.replaceAll("Math\\.", "@Math@"));

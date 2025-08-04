@@ -22,7 +22,13 @@ public class CodeInjectionServlet extends AbstractServlet {
     protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
         try {
+            
+            /* 
+            ～CxOneテスト用～
             String jsonString = req.getParameter("jsonString");
+            ～CxOneテスト用～
+            */
+
             Locale locale = req.getLocale();
 
             StringBuilder bodyHtml = new StringBuilder();

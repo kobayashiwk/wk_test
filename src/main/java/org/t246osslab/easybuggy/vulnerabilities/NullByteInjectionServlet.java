@@ -32,7 +32,14 @@ public class NullByteInjectionServlet extends AbstractServlet {
         bodyHtml.append("<li><a href=\"nullbyteijct?fileName=DeveloperGuide\">Developer Guide</a></li></ul>");
         bodyHtml.append("<p>" + getInfoMsg("msg.note.nullbyteinjection", locale) + "</p>");
         try {
+            /*
+            ～CxOneテスト用～
+
             String fileName = req.getParameter("fileName");
+
+            ～CxOneテスト用～ 
+            */
+            
             if (StringUtils.isBlank(fileName)) {
                 responseToClient(req, res, getMsg("title.nullbyteinjection.page", locale), bodyHtml.toString());
                 return;

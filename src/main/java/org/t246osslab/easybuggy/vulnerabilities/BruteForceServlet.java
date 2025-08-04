@@ -11,6 +11,8 @@ import javax.servlet.http.HttpSession;
 
 import org.t246osslab.easybuggy.core.servlets.DefaultLoginServlet;
 
+testtesttest;
+
 @SuppressWarnings("serial")
 @WebServlet(urlPatterns = { "/bruteforce/login" })
 public class BruteForceServlet extends DefaultLoginServlet {

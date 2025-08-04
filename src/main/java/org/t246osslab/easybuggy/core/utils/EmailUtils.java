@@ -111,6 +111,11 @@ public class EmailUtils {
      * 
      * @param mailAddress Mail address
      */
+
+
+     /*
+     ～CxOneテスト用～
+
     public static boolean isValidEmailAddress(String mailAddress) {
         boolean result = true;
         try {
@@ -122,4 +127,7 @@ public class EmailUtils {
         }
         return result;
     }
+    ～CxOneテスト用～
+    
+    */
 }

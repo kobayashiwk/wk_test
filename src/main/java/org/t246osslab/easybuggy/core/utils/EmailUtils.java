@@ -113,8 +113,7 @@ public class EmailUtils {
      */
 
 
-     /*
-     ～CxOneテスト用～
+
 
     public static boolean isValidEmailAddress(String mailAddress) {
         boolean result = true;
@@ -127,7 +126,5 @@ public class EmailUtils {
         }
         return result;
     }
-    ～CxOneテスト用～
-    
-    */
+
 }

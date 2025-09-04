@@ -39,7 +39,12 @@ public class BruteForceServlet extends DefaultLoginServlet {
                 res.sendRedirect("/admins/main");
             } else {
                 session.removeAttribute("target");
-                res.sendRedirect(target);
+                // Prevent open redirect by validating the target path
+                if (target != null && target.startsWith("/") && !target.startsWith("//") && !target.toLowerCase().startsWith("/\\\\")) {
+                    res.sendRedirect(target);
+                } else {
+                    res.sendRedirect("/admins/main");
+                }
             }
         } else {
             session.setAttribute("authNMsg", getErrMsg("msg.authentication.fail", locale));

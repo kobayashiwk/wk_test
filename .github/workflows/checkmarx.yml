@@ -24,6 +24,8 @@ jobs:
                 sca-username: ${{ secrets.CX_SCA_USERNAME }}
                 sca-password: ${{ secrets.CX_SCA_PASSWORD }}
                 disable-sca-scan: true
+                upload-sarif-file: false
+                delete-sarif-file: false
 #name: CxFlow
 #on:
 #  push:
